@@ -3,7 +3,9 @@
 
 # O(nlogn) time complexity - O(n) space complexity
 # Botteneck is the sorting part. After sorting,s comperison complexity will be O(n)
-# Comperision comlexity can be reduced to O(n) by counting sort since charset has fixed length
+# Comperision comlexity can be reduced to O(n) by counting sort since charset 
+# has fixed length counter array size will be limited.
+
 def sortedSolution(s1, s2):
     if(len(s1) != len(s2)):
         return False
@@ -29,4 +31,3 @@ def hashTableSolution(s1, s2):
             return False
     return True
     
-print(sortedSolution("",""))
