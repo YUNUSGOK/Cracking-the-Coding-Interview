@@ -30,13 +30,12 @@ def shiftingToNewArray(s):
 # Spaces at the end will be used as buffer to shift array    
 def inplaceShifting(s):
     space_count = 0
-    res = ['']*len(s)
     for c in s:
         if(c == ' '):
             space_count += 1
-    print(space_count)
+
     i = len(s)-1- int(space_count*2/3)
-    print(i)
+
     index = len(s)-1
     while(index >= 0):
         if(s[i] ==' '):
@@ -52,6 +51,3 @@ def inplaceShifting(s):
         
     return ''.join(s)
         
-
-print(inplaceShifting(list("Mr John Smith    ")))
-print(shiftingToNewArray("deneme    "))
