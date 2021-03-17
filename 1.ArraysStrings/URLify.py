@@ -6,6 +6,7 @@
 # peration in place.)
 
 
+
 # O(n) time complexity - O(n) space complexity
 def shiftingToNewArray(s):
     index = 0
@@ -29,6 +30,7 @@ def shiftingToNewArray(s):
 # O(n) time complexity - O(1) space complexity
 # Spaces at the end will be used as buffer to shift array    
 def inplaceShifting(s):
+    s = list(s)
     space_count = 0
     for c in s:
         if(c == ' '):
