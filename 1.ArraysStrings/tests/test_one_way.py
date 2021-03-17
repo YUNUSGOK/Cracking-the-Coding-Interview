@@ -36,10 +36,16 @@ class oneWayTest(unittest.TestCase):
             "Lorem ipsum dolor sit amet.", 
             "Lorem ipsum dolor"))
 
-    def test_different_lenght_true(self):
+    def test_different_lenght_true_1(self):
         self.assertTrue(oneWay.onePassSolution(
             "Lorem ipsum dolor sit amet.", 
             "Lorem ipsum olor sit amet."))
+    
+    def test_different_lenght_true_2(self):
+        self.assertTrue(oneWay.onePassSolution(
+            "Lorem ipsum dolor sit amet.", 
+            "Lorem ipsum xdolor sit amet."))
+
 
     def test_same_lenght_false(self):
         self.assertFalse(oneWay.onePassSolution(
