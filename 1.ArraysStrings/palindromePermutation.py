@@ -7,18 +7,23 @@
 
 # O(n) time complexity - O(n) space complexity
 def hashTableSolution(string):
-    string = string.lower()
+    lst = list(string.lower())
     charset = [0]*128
     odd_count = 0 
-    for char in string:
-        if((char >= 'A' and char <= 'Z') or (char >= 'a' and char <= 'z')):
-            continue
-        charset[ord(char)] += 1
+
+    for c in lst:
+
+        if((c >= 'A' and c <= 'Z') or (c >= 'a' and c <= 'z')):
+            charset[ord(c)] += 1
+
 
     for count in charset:
+        
         if(count % 2 == 1):
+ 
             odd_count += 1
     
     if odd_count > 1:
         return False
     return True 
+
