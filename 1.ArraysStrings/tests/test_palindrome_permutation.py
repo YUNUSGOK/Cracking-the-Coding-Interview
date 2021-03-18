@@ -1,7 +1,7 @@
 import unittest
 import palindromePermutation
 
-class palindromePermutationTest(unittest.TestCase):
+class PalindromePermutationTest(unittest.TestCase):
     
     def test_empty(self):
         self.assertTrue(palindromePermutation.hashTableSolution(""))

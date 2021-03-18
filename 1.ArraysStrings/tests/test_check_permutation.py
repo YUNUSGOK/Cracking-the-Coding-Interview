@@ -2,7 +2,7 @@ import unittest
 import checkPermutation
 
 
-class checkPalindromeTest(unittest.TestCase):
+class CheckPermutationTest(unittest.TestCase):
 
     def test_two_empty(self):
         self.assertTrue(checkPermutation.hashTableSolution("",""))

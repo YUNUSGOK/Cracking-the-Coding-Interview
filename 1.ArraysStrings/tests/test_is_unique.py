@@ -1,7 +1,7 @@
 import unittest
 import isUnique
 
-class isUniqueTest(unittest.TestCase):
+class IsUniqueTest(unittest.TestCase):
     
     def test_empty(self):
         self.assertTrue(isUnique.hashTableSolution(""))

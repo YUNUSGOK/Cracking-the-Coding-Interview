@@ -1,7 +1,7 @@
 import unittest
 import oneWay
 
-class oneWayTest(unittest.TestCase):
+class OneWayTest(unittest.TestCase):
 
     def test_two_empty(self):
         self.assertTrue(oneWay.onePassSolution(
