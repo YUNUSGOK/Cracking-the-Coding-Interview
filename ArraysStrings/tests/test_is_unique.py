@@ -4,6 +4,7 @@ import isUnique
 class IsUniqueTest(unittest.TestCase):
     
     def test_empty(self):
+        isUnique.hashTableSolution("")
         self.assertTrue(isUnique.hashTableSolution(""))
 
     def test_all_spaces(self):
